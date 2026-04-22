@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    #calc{ 
+       border: solid 1px;
+       background-color:rgba(211, 211, 211, 0.975);
+       padding:10px;
+       width: 200px;
+       font-size: 20px;
+       text-align: center;
+
+    }
+
+    #calc:hover{
+        cursor: pointer;
+        
+        
+
+    }
+   
+   </style>
+<script>
+
+const final= document.getElementById("Result").innerHTML;
+    function appendToDisplay(input){
+        dispaly.value+=input;`
+        
+    }
+    
+    
+    
+</script>
+<body>
+    <input type="text" >
+    <label for = "calculate"></label>
+    <select id="calculate">
+        <option onclick="appendToDisplay('+')" value="add">+</option>
+        <option onclick="appendToDisplay('-')"value="sub">-</option>
+        <option onclick="appendToDisplay('*')"value="multiply">*</option>
+        <option onclick="appendToDisplay('/')"value="div">/</option>
+    </select>
+    <input type="text" >
+    <p onclick="calculate()" id="calc">Calculate...</p>
+    <p id="Result">Result:</p>
+    
+</body>
+</html>
