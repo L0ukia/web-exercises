@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<style>
+body{
+    
+}
+h1{
+    color: red;
+    text-align: center;
+}
+h2{
+    color: black
+    text-align: center;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    width:100px;
+    height:100px;
+    text-align: center;
+    border-color: coral;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.centered{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+button{
+    width:100px;
+    height:50px;
+    border-style: solid;
+    border-color: red;
+}
+</style>
+</head>
+<body>
+    
+    <h1>Χειρισμός παραγράφων</h1>
+    <div class="centered">
+    <div class="container" id="test">
+      
+    </div>
+    <h2>Ενεργοποίηση/Άπενεργοποίηση</h2>
+    <br>
+    
+    <button type="button" onClick="upDown()">Επάνω / Κάτω!</button><br>
+    <button type="button" onClick="leftRight()">Αριστερά / Δεξιά!</button>
+    </div>
+</body>
+<script>
+function upDown() {
+    document.getElementById('test').style.border = "none";
+    document.getElementById('test').style.borderTop = 'solid black';
+    document.getElementById('test').style.borderBottom = 'solid black';
+}
+function leftRight() {
+    document.getElementById('test').style.border = "none";
+    document.getElementById('test').style.borderLeft = 'solid black';
+    document.getElementById('test').style.borderRight = 'solid black';
+}
+</script>
+    
